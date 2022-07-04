@@ -1,10 +1,12 @@
 	    function Vector(x, y) {
+		var myaudio = document.getElementById("audioID");
 	        this.x = x;
 	        this.y = y;
 	    };
 		
 	    Vector.prototype = {
 	        rotate: function (theta) {
+
 	            var x = this.x;
 	            var y = this.y;
 	            this.x = Math.cos(theta) * x - Math.sin(theta) * y;
@@ -35,6 +37,7 @@
 	    };
 		
 	    function Petal(stretchA, stretchB, startAngle, angle, growFactor, bloom) {
+myaudio.play();
 	        this.stretchA = stretchA;
 	        this.stretchB = stretchB;
 	        this.startAngle = startAngle;
